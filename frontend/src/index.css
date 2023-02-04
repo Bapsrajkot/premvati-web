@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.backimage {
+    background-image: url(./assets/back.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+
+.good {
+    background-image: url(/good.svg);
+}
+
+.poor {
+    background-image: url(/poor.svg);
+}
+.excellent {
+    background-image: url(/excellent.svg);
+}
+
+.fair {
+    background-image: url(/fair.svg);
+}
+
+.selectLable {
+    cursor: pointer;
+    width:30px;
+    height: 30px;
+    filter: grayscale(100%) opacity(70%);
+    transition: all .5s ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.selectLable:hover {
+    filter: grayscale(50%) opacity(85%);
+}
+
+
+.selectImg {
+    position: absolute;
+    z-index: 10;
+    outline: none;
+    display: none;
+}
+
+.selectImg:active+label,
+.selectImg:checked+label {
+    filter: none;
+}
