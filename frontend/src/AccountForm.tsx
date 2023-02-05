@@ -78,7 +78,7 @@ export function AccountForm({
         />
       </div>
       <div className="flex flex-col items-left justify-center  my-2">
-        <label className="text-xs font-bold mb-1 text-[#232323]">Upload Image</label>
+        <label className="text-xs font-bold mb-1 text-[#232323]">If You Have Any Problem/Suggestion Regarding Our Food Product, Click the photo....👇🏻</label>
         {openCamera ? (
           <div className="Container">
             {img === null ? (
